@@ -16,6 +16,7 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/i18n.css">
 
   <!--
     - google font link
@@ -46,13 +47,13 @@
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
+          <h1 class="name" title="Richard hanrick" data-i18n="personal.name" data-i18n-attr="title">Richard hanrick</h1>
 
-          <p class="title">Web developer</p>
+          <p class="title" data-i18n="personal.title">Web developer</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+          <span data-i18n="personal.showContacts">Show Contacts</span>
 
           <ion-icon name="chevron-down"></ion-icon>
         </button>
@@ -72,7 +73,7 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Email</p>
+              <p class="contact-title" data-i18n="contact.email.label">Email</p>
 
               <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
             </div>
@@ -86,7 +87,7 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Phone</p>
+              <p class="contact-title" data-i18n="contact.phone.label">Phone</p>
 
               <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
             </div>
@@ -100,9 +101,9 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Birthday</p>
+              <p class="contact-title" data-i18n="contact.birthday.label">Birthday</p>
 
-              <time datetime="1982-06-23">June 23, 1982</time>
+              <time datetime="1982-06-23" data-i18n="contact.birthday.value">June 23, 1982</time>
             </div>
 
           </li>
@@ -114,9 +115,9 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Location</p>
+              <p class="contact-title" data-i18n="contact.location.label">Location</p>
 
-              <address>Sacramento, California, USA</address>
+              <address data-i18n="contact.location.value">Sacramento, California, USA</address>
             </div>
 
           </li>
@@ -170,23 +171,23 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link  active" data-nav-link data-page-target="about" data-i18n="nav.about">About</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link data-page-target="resume" data-i18n="nav.resume">Resume</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link data-page-target="portfolio" data-i18n="nav.portfolio">Portfolio</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+            <button class="navbar-link" data-nav-link data-page-target="blog" data-i18n="nav.blog">Blog</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button class="navbar-link" data-nav-link data-page-target="contact" data-i18n="nav.contact">Contact</button>
           </li>
 
         </ul>
@@ -204,17 +205,17 @@
       <article class="about  active" data-page="about">
 
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title" data-i18n="about.title">About me</h2>
         </header>
 
         <section class="about-text">
-          <p>
+          <p data-i18n="about.description1">
             I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
             I enjoy
             turning complex problems into simple, beautiful and intuitive designs.
           </p>
 
-          <p>
+          <p data-i18n="about.description2">
             My job is to build your website so that it is functional and user-friendly but at the same time attractive.
             Moreover, I
             add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
@@ -230,7 +231,7 @@
 
         <section class="service">
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+          <h3 class="h3 service-title" data-i18n="services.title">What i'm doing</h3>
 
           <ul class="service-list">
 
@@ -242,9 +243,9 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
+                <h4 class="h4 service-item-title" data-i18n="services.webDesign.title">Web design</h4>
 
-                <p class="service-item-text">
+                <p class="service-item-text" data-i18n="services.webDesign.description">
                   The most modern and high-quality design made at a professional level.
                 </p>
               </div>
@@ -258,9 +259,9 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
+                <h4 class="h4 service-item-title" data-i18n="services.webDevelopment.title">Web development</h4>
 
-                <p class="service-item-text">
+                <p class="service-item-text" data-i18n="services.webDevelopment.description">
                   High-quality development of sites at the professional level.
                 </p>
               </div>
@@ -274,9 +275,9 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
+                <h4 class="h4 service-item-title" data-i18n="services.mobileApps.title">Mobile apps</h4>
 
-                <p class="service-item-text">
+                <p class="service-item-text" data-i18n="services.mobileApps.description">
                   Professional development of applications for iOS and Android.
                 </p>
               </div>
@@ -290,9 +291,9 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
+                <h4 class="h4 service-item-title" data-i18n="services.photography.title">Photography</h4>
 
-                <p class="service-item-text">
+                <p class="service-item-text" data-i18n="services.photography.description">
                   I make high-quality photos of any category at a professional level.
                 </p>
               </div>
@@ -310,7 +311,7 @@
 
         <section class="testimonials">
 
-          <h3 class="h3 testimonials-title">Testimonials</h3>
+          <h3 class="h3 testimonials-title" data-i18n="testimonials.title">Testimonials</h3>
 
           <ul class="testimonials-list has-scrollbar">
 
@@ -321,10 +322,10 @@
                   <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title data-i18n="testimonials.daniel.name">Daniel lewis</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
-                  <p>
+                  <p data-i18n="testimonials.daniel.text">
                     Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
                     lot of experience
                     and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
@@ -343,10 +344,10 @@
                   <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title data-i18n="testimonials.jessica.name">Jessica miller</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
-                  <p>
+                  <p data-i18n="testimonials.jessica.text">
                     Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
                     lot of experience
                     and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
@@ -365,10 +366,10 @@
                   <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title data-i18n="testimonials.emily.name">Emily evans</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
-                  <p>
+                  <p data-i18n="testimonials.emily.text">
                     Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
                     lot of experience
                     and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
@@ -387,10 +388,10 @@
                   <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title data-i18n="testimonials.henry.name">Henry william</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
-                  <p>
+                  <p data-i18n="testimonials.henry.text">
                     Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
                     lot of experience
                     and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
@@ -458,7 +459,7 @@
 
         <section class="clients">
 
-          <h3 class="h3 clients-title">Clients</h3>
+          <h3 class="h3 clients-title" data-i18n="clients.title">Clients</h3>
 
           <ul class="clients-list has-scrollbar">
 
@@ -515,7 +516,7 @@
       <article class="resume" data-page="resume">
 
         <header>
-          <h2 class="h2 article-title">Resume</h2>
+          <h2 class="h2 article-title" data-i18n="resume.title">Resume</h2>
         </header>
 
         <section class="timeline">
@@ -525,18 +526,18 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Education</h3>
+            <h3 class="h3" data-i18n="resume.education.title">Education</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
+              <h4 class="h4 timeline-item-title" data-i18n="resume.education.university.title">University school of the arts</h4>
 
-              <span>2007 — 2008</span>
+              <span data-i18n="resume.education.university.period">2007 — 2008</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" data-i18n="resume.education.university.description">
                 Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
                 quas molestias
                 exceptur.
@@ -546,11 +547,11 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
+              <h4 class="h4 timeline-item-title" data-i18n="resume.education.academy.title">New york academy of art</h4>
 
-              <span>2006 — 2007</span>
+              <span data-i18n="resume.education.academy.period">2006 — 2007</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" data-i18n="resume.education.academy.description">
                 Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
                 omnis..
               </p>
@@ -559,11 +560,11 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
+              <h4 class="h4 timeline-item-title" data-i18n="resume.education.highschool.title">High school of art and design</h4>
 
-              <span>2002 — 2004</span>
+              <span data-i18n="resume.education.highschool.period">2002 — 2004</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" data-i18n="resume.education.highschool.description">
                 Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
                 magni dolores
                 eos.
@@ -582,18 +583,18 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Experience</h3>
+            <h3 class="h3" data-i18n="resume.experience.title">Experience</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Creative director</h4>
+              <h4 class="h4 timeline-item-title" data-i18n="resume.experience.creative.title">Creative director</h4>
 
-              <span>2015 — Present</span>
+              <span data-i18n="resume.experience.creative.period">2015 — Present</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" data-i18n="resume.experience.creative.description">
                 Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
                 molestias
                 exceptur.
@@ -603,11 +604,11 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Art director</h4>
+              <h4 class="h4 timeline-item-title" data-i18n="resume.experience.art.title">Art director</h4>
 
-              <span>2013 — 2015</span>
+              <span data-i18n="resume.experience.art.period">2013 — 2015</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" data-i18n="resume.experience.art.description">
                 Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
                 quas molestias
                 exceptur.
@@ -617,11 +618,11 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Web designer</h4>
+              <h4 class="h4 timeline-item-title" data-i18n="resume.experience.web.title">Web designer</h4>
 
-              <span>2010 — 2013</span>
+              <span data-i18n="resume.experience.web.period">2010 — 2013</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" data-i18n="resume.experience.web.description">
                 Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
                 quas molestias
                 exceptur.
@@ -635,14 +636,14 @@
 
         <section class="skill">
 
-          <h3 class="h3 skills-title">My skills</h3>
+          <h3 class="h3 skills-title" data-i18n="resume.skills.title">My skills</h3>
 
           <ul class="skills-list content-card">
 
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
+                <h5 class="h5" data-i18n="resume.skills.webDesign">Web design</h5>
                 <data value="80">80%</data>
               </div>
 
@@ -655,7 +656,7 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
+                <h5 class="h5" data-i18n="resume.skills.graphicDesign">Graphic design</h5>
                 <data value="70">70%</data>
               </div>
 
@@ -668,7 +669,7 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
+                <h5 class="h5" data-i18n="resume.skills.branding">Branding</h5>
                 <data value="90">90%</data>
               </div>
 
@@ -681,7 +682,7 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
+                <h5 class="h5" data-i18n="resume.skills.wordpress">WordPress</h5>
                 <data value="50">50%</data>
               </div>
 
@@ -708,7 +709,7 @@
       <article class="portfolio" data-page="portfolio">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title" data-i18n="portfolio.title">Portfolio</h2>
         </header>
 
         <section class="projects">
@@ -716,19 +717,19 @@
           <ul class="filter-list">
 
             <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
+              <button class="active" data-filter-btn data-i18n="portfolio.filter.all">All</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn data-i18n="portfolio.filter.webDesign">Web design</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Applications</button>
+              <button data-filter-btn data-i18n="portfolio.filter.applications">Applications</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+              <button data-filter-btn data-i18n="portfolio.filter.webDevelopment">Web development</button>
             </li>
 
           </ul>
@@ -737,7 +738,7 @@
 
             <button class="filter-select" data-select>
 
-              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-value" data-selecct-value data-i18n="portfolio.filter.selectCategory">Select category</div>
 
               <div class="select-icon">
                 <ion-icon name="chevron-down"></ion-icon>
@@ -748,19 +749,19 @@
             <ul class="select-list">
 
               <li class="select-item">
-                <button data-select-item>All</button>
+                <button data-select-item data-i18n="portfolio.filter.all">All</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item data-i18n="portfolio.filter.webDesign">Web design</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Applications</button>
+                <button data-select-item data-i18n="portfolio.filter.applications">Applications</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web development</button>
+                <button data-select-item data-i18n="portfolio.filter.webDevelopment">Web development</button>
               </li>
 
             </ul>
@@ -948,7 +949,7 @@
       <article class="blog" data-page="blog">
 
         <header>
-          <h2 class="h2 article-title">Blog</h2>
+          <h2 class="h2 article-title" data-i18n="blog.title">Blog</h2>
         </header>
 
         <section class="blog-posts">
@@ -1140,7 +1141,7 @@
       <article class="contact" data-page="contact">
 
         <header>
-          <h2 class="h2 article-title">Contact</h2>
+          <h2 class="h2 article-title" data-i18n="contact.title">Contact</h2>
         </header>
 
         <section class="mapbox" data-mapbox>
@@ -1153,21 +1154,21 @@
 
         <section class="contact-form">
 
-          <h3 class="h3 form-title">Contact Form</h3>
+          <h3 class="h3 form-title" data-i18n="contact.form.title">Contact Form</h3>
 
           <form action="#" class="form" data-form>
 
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="text" name="fullname" class="form-input" data-i18n="contact.form.fullName" data-i18n-attr="placeholder" placeholder="Full name" required data-form-input>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <input type="email" name="email" class="form-input" data-i18n="contact.form.email" data-i18n-attr="placeholder" placeholder="Email address" required data-form-input>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <textarea name="message" class="form-input" data-i18n="contact.form.message" data-i18n-attr="placeholder" placeholder="Your Message" required data-form-input></textarea>
 
             <button class="form-btn" type="submit" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
+              <span data-i18n="contact.form.send">Send Message</span>
             </button>
 
           </form>
@@ -1189,6 +1190,35 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+
+  <!--
+    - i18n system scripts
+  -->
+  <script src="./assets/js/i18n/language-detector.js"></script>
+  <script src="./assets/js/i18n/translation-manager.js"></script>
+  <script src="./assets/js/i18n/text-renderer.js"></script>
+  <script src="./assets/js/i18n/i18n-system.js"></script>
+  
+  <!--
+    - i18n initialization
+  -->
+  <script>
+    // Initialize i18n system when page loads
+    document.addEventListener('DOMContentLoaded', async function() {
+      try {
+        // Initialize i18n system with auto language detection
+        const i18nSystem = await initI18n({
+          defaultLanguage: 'en',
+          supportedLanguages: ['en', 'zh-cn', 'zh-tw'],
+          autoDetect: true,
+          enableDOMObserver: true
+        });
+        
+      } catch (error) {
+        console.error('Failed to initialize i18n system:', error);
+      }
+    });
+  </script>
 
   <!--
     - ionicon link
