@@ -74,7 +74,7 @@
    */
 
   /* font-family */
-  --ff-poppins: 'Poppins', sans-serif;
+  --ff-poppins: 'Poppins', 'Noto Sans SC', 'Noto Sans TC', 'Microsoft YaHei', 'Microsoft JhengHei', 'PingFang SC', 'Hiragino Sans GB', sans-serif;
 
   /* font-size */
   --fs-1: 24px;
